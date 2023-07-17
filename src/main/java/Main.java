@@ -1,6 +1,13 @@
 
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("Hello World");
+		var list = new GenericList<String>();
+		list.add("a");
+		list.add("b");
+		for (var item : list) {
+			System.out.println(item);
+		}
+		CollectionsDemo.show();
+		ListDemo.show();
 	}
 }
